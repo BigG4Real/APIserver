@@ -28,7 +28,9 @@ app.MapGet("/", SayHello);
 app.MapGet("/micke", GetSigmanMicke);
 app.MapGet("/teacher/{n}", getTeacher);
 app.MapGet("/teacher/", ListTeachers);
+
 app.MapPost("/teacher/", AddTeacher);
+
 app.Run(); //intern loop som kollar https request
 
 static string SayHello() => "Hej på er sigmor!";
